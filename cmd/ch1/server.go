@@ -134,9 +134,3 @@ func Server() {
 	http.HandleFunc("/", lissajousHandler)
 	log.Fatal(http.ListenAndServe("localhost:8000", nil))
 }
-
-func use(vals ...any) {
-	for _, val := range vals {
-		_ = val
-	}
-}
